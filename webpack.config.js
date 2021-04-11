@@ -6,7 +6,8 @@ module.exports = {
     mode: "development",
     output: {
         path: path.join(__dirname, 'public'),
-        filename: 'bundle.js' // nazywamy jak chcemy ale ta jest dobra
+        filename: 'bundle.js', // nazywamy jak chcemy ale ta jest dobra
+        //  publicPath: '/'
     },
     
     module: {
@@ -26,6 +27,7 @@ module.exports = {
     devtool: 'eval-cheap-module-source-map',
     devServer: {
         contentBase: path.join(__dirname, 'public'),
+        historyApiFallback: true,
     }
     
 };
