@@ -1,1 +1,1 @@
-# Portfolio Web createdfor frontend developer recruitment purposes
+# Portfolio Web created for frontend developer recruitment purposes
