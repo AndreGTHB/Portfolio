@@ -1,20 +1,46 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 
 .navbar-light .navbar-brand {
-    color:#d3742b;
-    font-weight: 400;
-    box-shadow: -2px/*horiz*/ -2px /*vertic*/ 5px /*blur*/ 2px /*spread*/ rgba(0/*shadow*/,0/*bacg col*/,0/*box color*/,0.1/*opacity*/);
-    font-size: 1.5em;
+  color: #d3742b;
+  font-weight: 400;
+  box-shadow: -2px /*horiz*/ -2px /*vertic*/ 5px /*blur*/ 2px /*spread*/ rgba(0
+        /*shadow*/, 0 /*bacg col*/, 0 /*box color*/, 0.1 /*opacity*/);
+  font-size: 1.5em;
 }
 
-.navbar-light .navbar-nav .nav-link{
-    color:#d3742b;
-    font-weight: 400;
-    box-shadow: -2px/*horiz*/ -2px /*vertic*/ 5px /*blur*/ 2px /*spread*/ rgba(0/*shadow*/,0/*bacg col*/,0/*box color*/,0.1/*opacity*/);
-    font-size: 1.5em;
+.navbar-light .navbar-nav .nav-link {
+  color: #d3742b;
+  font-weight: 400;
+  box-shadow: -2px /*horiz*/ -2px /*vertic*/ 5px /*blur*/ 2px /*spread*/ rgba(0
+        /*shadow*/, 0 /*bacg col*/, 0 /*box color*/, 0.1 /*opacity*/);
+  font-size: 1.5em;
 }
 
 body {
-    font-size: 1.4rem;
-    background-image: url('/images/lake-6003746_1920.jpg');
+  font-size: 1.4rem;
+  background-image: url("/images/lake-6003746_1920.jpg");
+}
+
+@keyframes appear {
+  from {
+      opacity: 0;
   }
+  to {
+      opacity: 1;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  animation-name:appear;
+  animation-duration: 1s;
+}
