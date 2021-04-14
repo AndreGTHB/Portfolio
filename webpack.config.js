@@ -21,7 +21,19 @@ module.exports = {
         },
     {
         // mode: 'development',
-    }]
+    },
+    {
+        test: /\.(jpg|png|svg|gif)$/,
+        use: [
+            {
+                loader: 'file-loader',
+                options: {
+                    outputPath: 'img/',
+                    name: '[name].[ext]'
+                }
+            }
+        ]
+    },]
         
     },
     devtool: 'eval-cheap-module-source-map',
