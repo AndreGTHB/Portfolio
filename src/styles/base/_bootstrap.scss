@@ -16,9 +16,11 @@
   font-size: 1.5em;
 }
 
-body {
+.homeBox {
   font-size: 1.4rem;
   background-image: url("/images/lake-6003746_1920.jpg");
+  height: 100vh;
+  width: 100wh;
 }
 
 @keyframes appear {
@@ -30,17 +32,27 @@ body {
   }
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+// .AboutBox {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   min-height: 100vh;
+//   background-color: black;
+ 
+// }
+
+// .box {
+//   margin: auto;
+//   animation-name:appear;
+//   animation-duration: 1s;
+//   height: 100%;
+// }
+
+.box img {
+  display: block;
+  margin-top: 600px;
+  width: 400px;
+  height: 200px;
+  border:1px solid black;
 }
 
-.box {
-  width: 200px;
-  height: 200px;
-  background-color: blue;
-  animation-name:appear;
-  animation-duration: 1s;
-}
